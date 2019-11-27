@@ -59,7 +59,7 @@ How to setup a bot
 6. Run the container. Remember to place database into volume and provide the 
    token::
 
-    docker run -d -v /var/data netherappbot \
+    docker run -d --cpus 1 -v /var/data netherappbot \
         netherappbot 987350479:AAG176kql1XZSL81RdLBJuYoYwpneeztHHw \
         sqlite:///var/data/bot.db
 
